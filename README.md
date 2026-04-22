@@ -36,26 +36,11 @@ Creation and management of green zones (safe zones) in SA:MP / open.mp
 Include in your code and begin using the library:
 ```pawn
 #include <greenzones>
+```
 
-new gzid = greenzone_CreateRectangle(0.0, 0.0, 100.0, 100.0);
+## Example
+```
 
-public OnPlayerEnterGreenZone(playerid, greenzone_id)
-{
-    SendClientMessage(playerid, -1, "You entered a safe zone");
-    return 1;
-}
-
-public OnPlayerLeaveGreenZone(playerid, greenzone_id)
-{
-    SendClientMessage(playerid, -1, "You left the safe zone");
-    return 1;
-}
-
-public OnPlayerPressFireKeyInGreenZone(playerid)
-{
-    SendClientMessage(playerid, -1, "You cannot shoot in a safe zone");
-    return 1;
-}
 ```
 
 Callbacks
