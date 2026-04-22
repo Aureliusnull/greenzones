@@ -1,7 +1,9 @@
 # greenzones
 
 Creation and management of green zones (safe zones) in SA:MP
-![Crosshair](https://raw.githubusercontent.com/Aureliusnull/greenzones/main/preview.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aureliusnull/greenzones/main/preview.png" width="700">
+</p>
 
 ## Reference
 * [Installation](#installation)
