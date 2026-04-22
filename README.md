@@ -1,9 +1,28 @@
 # greenzones
 
-Creation and management of green zones (safe zones) in SA:MP
+Creation and management of green zones (safe zones) in SA:MP / open.mp
 <p align="center">
   <img src="https://raw.githubusercontent.com/Aureliusnull/greenzones/main/preview.png" width="700">
 </p>
+
+## Features
+
+* Automatic weapon removal inside green zones  
+* Weapon restore on exit  
+* Fire key detection inside zones  
+* Support for rectangle and circle zones  
+* Player counter inside zones  
+* Integration with streamer areas  
+
+## Notes
+
+* Requires `streamer` for dynamic areas  
+* Requires `foreach` for iteration  
+* Supports both SA:MP and open.mp
+
+## Dependencies
+* [streamer](https://github.com/samp-incognito/samp-streamer-plugin)
+* [foreach](https://github.com/Open-GTO/foreach)
 
 ## Reference
 * [Installation](#installation)
@@ -11,10 +30,6 @@ Creation and management of green zones (safe zones) in SA:MP
 * [Callbacks](#callbacks)
 * [Functions](#functions)
 * [Definitions](#definitions)
-
-## Dependencies
-* [streamer](https://github.com/samp-incognito/samp-streamer-plugin)
-* [foreach](https://github.com/Open-GTO/foreach)
 
 ## Installation
 
