@@ -36,14 +36,16 @@ Include in your code and begin using the library:
 
 ```
 ## Directives
-<details> <summary>Click to expand the list</summary>
-#define MAX_GREENZONES_COUNT 100
-#define INVALID_GREENZONE_ID -1
-#define MAX_GREENZONE_WEAPON_SLOT 12
-#define GREENZONE_FIRE_KEY_TICK_DELAY 3
-#define GREENZONE_DEFAULT_COLOR 0x33FF33FF
-</details>
-Callbacks
+
+Directive | Default value | Note
+----------|---------------|------------
+INVALID_GREENZONE_ID | -1 |
+MAX_GREENZONES_COUNT | 100
+MAX_GREENZONE_WEAPON_SLOT | 12
+GREENZONE_FIRE_KEY_TICK_DELAY | 3
+GREENZONE_DEFAULT_COLOR | 0x33FF33FF
+
+## Callbacks
 <details> <summary>Click to expand the list</summary>
 public OnPlayerEnterGreenZone(const playerid, const greenzone_id)
 
@@ -63,7 +65,8 @@ Called when a player presses fire key inside a green zone
 
 playerid - Player ID
 </details>
-Functions
+
+## Functions
 <details> <summary>Click to expand the list</summary>
 greenzone_CreateRectangle(Float:min_x, Float:min_y, Float:max_x, Float:max_y, virtual_world = -1, interior_id = -1)
 
