@@ -8,17 +8,10 @@ Creation and management of green zones (safe zones) in SA:MP / open.mp
 ## Features
 
 * Automatic weapon removal inside green zones  
-* Weapon restore on exit  
+* Weapon restore on zone exit  
 * Fire key detection inside zones  
 * Support for rectangle and circle zones  
-* Player counter inside zones  
-* Integration with streamer areas  
-
-## Notes
-
-* Requires `streamer` for dynamic areas  
-* Requires `foreach` for iteration  
-* Supports both SA:MP and open.mp
+* Player counter inside zones
 
 ## Dependencies
 * [streamer](https://github.com/samp-incognito/samp-streamer-plugin)
@@ -105,7 +98,7 @@ greenzone_IsValidID(greenzone_id)
 Check if ID is valid
 
 </details>
-Definitions
+Directives
 <details> <summary>Click to expand the list</summary>
 #define MAX_GREENZONES_COUNT 100
 #define INVALID_GREENZONE_ID -1
