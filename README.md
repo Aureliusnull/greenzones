@@ -35,7 +35,14 @@ Include in your code and begin using the library:
 ```
 
 ```
-
+## Directives
+<details> <summary>Click to expand the list</summary>
+#define MAX_GREENZONES_COUNT 100
+#define INVALID_GREENZONE_ID -1
+#define MAX_GREENZONE_WEAPON_SLOT 12
+#define GREENZONE_FIRE_KEY_TICK_DELAY 3
+#define GREENZONE_DEFAULT_COLOR 0x33FF33FF
+</details>
 Callbacks
 <details> <summary>Click to expand the list</summary>
 public OnPlayerEnterGreenZone(const playerid, const greenzone_id)
@@ -96,24 +103,4 @@ Get player's current green zone ID
 greenzone_IsValidID(greenzone_id)
 
 Check if ID is valid
-
 </details>
-Directives
-<details> <summary>Click to expand the list</summary>
-#define MAX_GREENZONES_COUNT 100
-#define INVALID_GREENZONE_ID -1
-#define MAX_GREENZONE_WEAPON_SLOT 12
-#define GREENZONE_FIRE_KEY_TICK_DELAY 3
-#define GREENZONE_DEFAULT_COLOR 0x33FF33FF
-</details>
-Features
-Automatic weapon removal inside green zones
-Weapon restore on exit
-Fire key detection inside zones
-Support for rectangle and circle zones
-Player counter inside zones
-Integration with streamer areas
-Notes
-Requires streamer for dynamic areas
-Requires foreach for iteration
-Supports both SA:MP and open.mp
