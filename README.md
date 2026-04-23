@@ -129,11 +129,11 @@ public OnPlayerPressFireKeyInGreenZone(const playerid)
 
 Directive | Default value | Note
 ----------|---------------|------------
-INVALID_GREENZONE_ID | -1 |
-MAX_GREENZONES_COUNT | 100
-MAX_GREENZONE_WEAPON_SLOT | 12
-GREENZONE_FIRE_KEY_TICK_DELAY | 3
-GREENZONE_DEFAULT_COLOR | 0x33FF33FF
+INVALID_GREENZONE_ID | -1 | 
+MAX_GREENZONES_COUNT | 100 | Can be redefined
+MAX_GREENZONE_WEAPON_SLOT | 12 | Can be redefined
+GREENZONE_FIRE_KEY_TICK_DELAY | 3 | Can be redefined
+GREENZONE_DEFAULT_COLOR | 0x33FF33FF | Can be redefined
 
 ## Callbacks
 <details> 
