@@ -1,6 +1,6 @@
 # greenzones
 
-Creation and management of green zones (safe zones) in SA:MP / open.mp
+Creation and management of greenzones (safe zones) in SA:MP / open.mp
 <p align="center">
   <img src="https://raw.githubusercontent.com/Aureliusnull/greenzones/main/preview.png" width="700">
 </p>
@@ -20,9 +20,9 @@ Creation and management of green zones (safe zones) in SA:MP / open.mp
 ## Reference
 * [Installation](#installation)
 * [Example](#example)
+* [Directives](#directives)
 * [Callbacks](#callbacks)
 * [Functions](#functions)
-* [Definitions](#definitions)
 
 ## Installation
 
