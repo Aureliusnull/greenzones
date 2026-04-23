@@ -129,71 +129,76 @@ public OnPlayerPressFireKeyInGreenZone(const playerid)
 
 Directive | Default value | Note
 ----------|---------------|------------
-INVALID_GREENZONE_ID | -1 |
-MAX_GREENZONES_COUNT | 100
-MAX_GREENZONE_WEAPON_SLOT | 12
-GREENZONE_FIRE_KEY_TICK_DELAY | 3
-GREENZONE_DEFAULT_COLOR | 0x33FF33FF
+INVALID_GREENZONE_ID | -1 | 
+MAX_GREENZONES_COUNT | 100 | Can be redefined
+MAX_GREENZONE_WEAPON_SLOT | 12 | Can be redefined
+GREENZONE_FIRE_KEY_TICK_DELAY | 3 | Can be redefined
+GREENZONE_DEFAULT_COLOR | 0x33FF33FF | Can be redefined
 
 ## Callbacks
-<details> <summary>Click to expand the list</summary>
-public OnPlayerEnterGreenZone(const playerid, const greenzone_id)
+<details> 
+<summary>Click to expand the list</summary>
+  
+#### public OnPlayerEnterGreenZone(playerid, greenzone_id)
+* Called when a player enters a greenzone
+> * `playerid` - The ID of the player
+> * `greenzone_id` - The ID of the greenzone
 
-Called when a player enters a green zone
+#### public OnPlayerLeaveGreenZone(playerid, greenzone_id)
+* Called when a player leaves a greenzone
+> * `playerid` - The ID of the player
+> * `greenzone_id` - The ID of the greenzone
 
-playerid - Player ID
-greenzone_id - Green zone ID
-public OnPlayerLeaveGreenZone(const playerid, const greenzone_id)
-
-Called when a player leaves a green zone
-
-playerid - Player ID
-greenzone_id - Green zone ID
-public OnPlayerPressFireKeyInGreenZone(const playerid)
-
-Called when a player presses fire key inside a green zone
-
-playerid - Player ID
+#### public OnPlayerPressFireKeyInGreenZone(playerid)
+* Called when a player presses fire key inside a green zone
+> * `playerid` - The ID of the player
 </details>
 
 ## Functions
-<details> <summary>Click to expand the list</summary>
-greenzone_CreateRectangle(Float:min_x, Float:min_y, Float:max_x, Float:max_y, virtual_world = -1, interior_id = -1)
+<details>
+<summary>Click to expand the list</summary>
 
-Create rectangular green zone
+#### greenzone_CreateRectangle(Float:min_x, Float:min_y, Float:max_x, Float:max_y, virtual_world = -1, interior_id = -1)
+> Create rectangle greenzone
+> * `Float:min_x` - The min_x coordinate to create the rectangle
+> * `Float:min_y` - The min_y coordinate to create the rectangle
+> * `Float:max_x` - The max_x coordinate to create the rectangle
+> * `Float:max_y` - The max_y coordinate to create the rectangle
+> * `virtual_world` - The virtual world ID 
+> * `interior_id` - The interior ID
 
-Returns: greenzone_id or INVALID_GREENZONE_ID
-greenzone_CreateCircle(Float:x, Float:y, Float:radius, virtual_world = -1, interior_id = -1)
+#### greenzone_CreateCircle(Float:x, Float:y, Float:radius, virtual_world = -1, interior_id = -1)
+> Create circle greenzone
+> * `Float:x` - The x coordinate to create the greenzone
+> * `Float:y` - The z coordinate to create the greenzone
+> * `Float:radius` - The greenzone radius
+> * `virtual_world` - The virtual world ID 
+> * `interior_id` - The interior ID
 
-Create circular green zone
+#### greenzone_Destroy(greenzone_id)
+> Remove greenzone
+> * `greenzone_id` - The ID of the greenzone
 
-Returns: greenzone_id or INVALID_GREENZONE_ID
-greenzone_Destroy(greenzone_id)
+#### greenzone_IsValidID(greenzone_id)
+> Check if ID greenzone is valid
+> * ` greenzone_id` - The ID of the greenzone
 
-Remove green zone
+#### greenzone_GetAreaID(greenzone_id)
+> Get dynamic area ID
+> * ` greenzone_id` - The ID of the greenzone
 
-Returns: true/false
-greenzone_ShowShapeForAll(color)
+#### greenzone_GetNumberOfPlayers(greenzone_id)
+> Get number of players inside the zone
+> * ` greenzone_id` - The ID of the greenzone
 
-Show all green zone shapes for all players
+#### greenzone_ShowShapeForAll()
+> Show all greenzone shapes for all players
 
-greenzone_HideShapeForAll()
+#### greenzone_HideShapeForAll()
+> Hide all greenzone shapes for all players
 
-Hide all green zone shapes
-
-greenzone_GetAreaID(greenzone_id)
-
-Get dynamic area ID
-
-greenzone_GetNumberOfPlayers(greenzone_id)
-
-Get number of players inside the zone
-
-greenzone_GetPlayerAreaID(playerid)
-
-Get player's current green zone ID
-
-greenzone_IsValidID(greenzone_id)
-
-Check if ID is valid
+#### greenzone_GetPlayerAreaID(playerid)
+> Get player's current greenzone ID
+> * `playerid` - The ID of the player
+ 
 </details>
