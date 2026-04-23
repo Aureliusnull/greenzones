@@ -179,28 +179,26 @@ GREENZONE_DEFAULT_COLOR | 0x33FF33FF
 > Remove greenzone
 > * `greenzone_id` - The ID of the greenzone
 
-Returns: true/false
-greenzone_ShowShapeForAll(color)
+#### greenzone_IsValidID(greenzone_id)
+> Check if ID greenzone is valid
+> * ` greenzone_id` - The ID of the greenzone
 
-Show all green zone shapes for all players
+#### greenzone_GetAreaID(greenzone_id)
+> Get dynamic area ID
+> * ` greenzone_id` - The ID of the greenzone
 
-greenzone_HideShapeForAll()
+#### greenzone_GetNumberOfPlayers(greenzone_id)
+> Get number of players inside the zone
+> * ` greenzone_id` - The ID of the greenzone
 
-Hide all green zone shapes
+#### greenzone_ShowShapeForAll()
+> Show all greenzone shapes for all players
 
-greenzone_GetAreaID(greenzone_id)
+#### greenzone_HideShapeForAll()
+> Hide all greenzone shapes for all players
 
-Get dynamic area ID
-
-greenzone_GetNumberOfPlayers(greenzone_id)
-
-Get number of players inside the zone
-
-greenzone_GetPlayerAreaID(playerid)
-
-Get player's current green zone ID
-
-greenzone_IsValidID(greenzone_id)
-
-Check if ID is valid
+#### greenzone_GetPlayerAreaID(playerid)
+> Get player's current greenzone ID
+> * `playerid` - The ID of the player
+ 
 </details>
