@@ -191,12 +191,6 @@ GREENZONE_DEFAULT_COLOR | 0x33FF33FF | Can be redefined
 > Get number of players inside the zone
 > * ` greenzone_id` - The ID of the greenzone
 
-#### greenzone_ShowShapeForAll()
-> Show all greenzone shapes for all players
-
-#### greenzone_HideShapeForAll()
-> Hide all greenzone shapes for all players
-
 #### greenzone_GetPlayerAreaID(playerid)
 > Get player's current greenzone ID
 > * `playerid` - The ID of the player
